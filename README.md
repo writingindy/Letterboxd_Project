@@ -1,11 +1,24 @@
 # Letterboxd Project Analyzing Movie Preferences
 
 ### 1. Components
-- data scraping from Letterboxd website, fetching data using The Movie Database (TMDB) API, as well as script data from various websites
+- data scraping from Letterboxd website, fetching data using The Movie Database (TMDb) API, as well as script data from various websites
 - exploratory data analysis (EDA) on user movie data
 - topic modeling on movie scripts
 
-### 2. Instructions
+### 2. Status
+On major components:
+- [x] Data scraping from Letterboxd website
+- [x] Data scraping from TMDb API
+- [ ] Script scraping from various websites
+- [ ] EDA on user movie data
+- [ ] Topic modeling on movie scripts
+
+On minor improvements:
+- [ ] Supplement genre information using Letterboxd website when TMDb API fails
+- [ ] Improve initialization of TMDb data array to reduce amount of if-else statements in data extraction code
+- [ ] Better colors for graphs
+
+### 3. Instructions
 Some instructions for running the notebook:
 
 1. Create a virtual environment using the following command in PowerShell
