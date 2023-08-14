@@ -11,12 +11,20 @@ On major components:
 - [x] Data scraping from TMDb API
 - [ ] Script scraping from various websites
 - [ ] EDA on user movie data
+        - [x] Runtime histogram
+        - [x] Summary statistics on ratings
+
+        - [ ] Budget and Revenue EDA
+        - [ ] Popularity EDA
+        - [ ] Language distribution + analysis on imbalanced language classes
 - [ ] Topic modeling on movie scripts
 
 On minor improvements:
+- [ ] Put all helper functions into separate Python script that is imported into Python notebook
 - [ ] Supplement genre information using Letterboxd website when TMDb API fails
 - [ ] Improve initialization of TMDb data array to reduce amount of if-else statements in data extraction code
-- [ ] Better colors for graphs
+- [ ] Better colors for graphs + titles + legends
+- [ ] Rewrite genre counts using pandas built-in functions sort_values and reindex
 
 ### 3. Instructions
 Some instructions for running the notebook:
