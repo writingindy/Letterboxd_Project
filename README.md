@@ -11,13 +11,15 @@ On major components:
 - [x] Data scraping from TMDb API
 - [ ] Script scraping from various websites
 - [ ] EDA on user movie data
-        - [x] Runtime histogram
-        - [x] Summary statistics on ratings
-
-        - [ ] Budget and Revenue EDA
-        - [ ] Popularity EDA
-        - [ ] Language distribution + analysis on imbalanced language classes
 - [ ] Topic modeling on movie scripts
+
+Specific EDA goals        
+- [x] Runtime histogram
+- [x] Summary statistics on ratings
+- [ ] Budget and Revenue EDA
+- [ ] Popularity EDA
+- [ ] Language distribution + analysis on imbalanced language classes
+
 
 On minor improvements:
 - [ ] Put all helper functions into separate Python script that is imported into Python notebook
