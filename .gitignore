@@ -1,2 +1,4 @@
 data
 letterboxd
+__pycache__
+.vscode
