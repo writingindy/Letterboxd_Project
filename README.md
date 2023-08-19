@@ -8,25 +8,39 @@
 ### 2. Status
 On major components:
 - [x] Data scraping from Letterboxd website
-- [x] Data scraping from TMDb API
+- [x] Data scraping from TMDb website (using their API)
+- [ ] Data preprocessing (setting appropriate datatypes)
 - [ ] Script scraping from various websites
-- [ ] EDA on user movie data
 - [ ] Topic modeling on movie scripts
+- [x] EDA on user movie data
+- [ ] Missing data imputation
+- [ ] Model verification: ordinal logistic regression (proportional odds (PO), or forward continuation ratio (CR))
+- [ ] Model verification: Bayesian decision trees
+- [ ] Model selection + model validation
+
 
 Specific EDA goals        
 - [x] Runtime histogram
 - [x] Summary statistics on ratings
-- [ ] Budget and Revenue EDA
-- [ ] Popularity EDA
-- [ ] Language distribution + analysis on imbalanced language classes
+- [x] Pairwise scatter plots of independent variables
+- [x] Language distribution + analysis on imbalanced language classes
+
+For ordinal logistic regresion, implement:
+- [x] verification of ordinality assumption, by plotting mean of predictor X stratified by levels of response Y (using a boxplot)
+- [ ] score residual plots to verify parallelism
+- [ ] partial residual plots to verify linearity and parallelism
+- [ ] Li and Shepherd residual to verify functional form of predictors
+- [ ] verification of PO assumption for each predictor separately (by comparing logits of proportions of form Y >= j)
 
 
 On minor improvements:
-- [ ] Put all helper functions into separate Python script that is imported into Python notebook
 - [ ] Supplement genre information using Letterboxd website when TMDb API fails
+- [x] Convert genres information from list of strings to indicator matrix
+- [x] Put all helper functions into separate Python script that is imported into Python notebook
 - [ ] Improve initialization of TMDb data array to reduce amount of if-else statements in data extraction code
 - [ ] Better colors for graphs + titles + legends
 - [ ] Rewrite genre counts using pandas built-in functions sort_values and reindex
+- [ ] Implement data imputation for missing data
 
 ### 3. Instructions
 Some instructions for running the notebook:
